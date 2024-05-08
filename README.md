@@ -1,11 +1,11 @@
 ## Description
 
-This package extends @gedai/tactical-design by implementing concrete data storage integration with Mongoose. It exposes the base Repository class for mongoose implementations that can be used in business application contexts. It also provides concrete implementation of Mongoose Transaction.
+This package extends @gedai/nestjs-tactical-design by implementing concrete data persistence with Mongoose. It exposes the base Repository class for mongoose implementations that should be extended in services for persistence. It also provides concrete implementation of Transactional decorator for usage with mongoose and the mongoose repository.
 
 ## Installation
 
 ```bash
-$ npm install @gedai/tactical-design @gedai/tactical-design-mongoose
+$ npm install @gedai/nestjs-tactical-design @gedai/nestjs-tactical-design-mongoose @nestjs/mongoose mongoose
 ```
 
 ## License

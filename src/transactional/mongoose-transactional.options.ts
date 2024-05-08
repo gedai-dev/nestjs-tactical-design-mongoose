@@ -1,4 +1,4 @@
-import { TransactionalModule } from '@gedai/tactical-design';
+import { TransactionalModule } from '@gedai/nestjs-tactical-design';
 import { ConfigurableModuleBuilder } from '@nestjs/common';
 import { MongooseTransactionManager } from './mongoose-transaction.manager';
 
@@ -9,7 +9,7 @@ export type TransactionalMongooseExtrasOptions = {
 
 export const { ConfigurableModuleClass, MODULE_OPTIONS_TOKEN } =
   new ConfigurableModuleBuilder<TransactionalMongooseOptions>()
-    .setClassMethodName('forRoot')
+    .setClassMethodName('forFeature')
     .setFactoryMethodName('createTransactionalOptions')
     .setExtras<TransactionalMongooseExtrasOptions>(
       null,
@@ -20,7 +20,7 @@ export const { ConfigurableModuleClass, MODULE_OPTIONS_TOKEN } =
           global: true,
           imports: [
             ...(definitions.imports || []),
-            TransactionalModule.forRoot({
+            TransactionalModule.forFeature({
               connectionName,
               TransactionManagerAdapter:
                 MongooseTransactionManager(connectionName),

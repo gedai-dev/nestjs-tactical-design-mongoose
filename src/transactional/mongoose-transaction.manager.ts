@@ -1,5 +1,5 @@
-import { ContextService } from '@gedai/core';
-import { Transaction, TransactionManager } from '@gedai/tactical-design';
+import { ContextService } from '@gedai/nestjs-core';
+import { Transaction, TransactionManager } from '@gedai/nestjs-tactical-design';
 import { Injectable, Type } from '@nestjs/common';
 import { InjectConnection } from '@nestjs/mongoose';
 import { ClientSession, Connection } from 'mongoose';

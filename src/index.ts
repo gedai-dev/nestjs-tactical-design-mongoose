@@ -1,4 +1,4 @@
-export * from './core/entity.schema';
-export * from './core/repository';
-export * from './transactional/mongoose-transaction.manager';
+export * from './domain-tactics/entity.schema';
+export * from './domain-tactics/repository';
+
 export * from './transactional/mongoose-transactional.module';

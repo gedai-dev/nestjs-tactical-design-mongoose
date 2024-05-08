@@ -3,7 +3,7 @@ import {
   EntitySchemaFactory,
   Repository,
   TransactionManager,
-} from '@gedai/tactical-design';
+} from '@gedai/nestjs-tactical-design';
 import { Injectable } from '@nestjs/common';
 import { ClientSession, FilterQuery, Model, Types } from 'mongoose';
 import { EntityMongooseSchema } from './entity.schema';
