@@ -1,6 +1,6 @@
 {
   "name": "@gedai/nestjs-tactical-design-mongoose",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Domain Driven Design and CQRS Mongoose for gedai project",
   "author": "gm50x",
   "private": false,
@@ -31,8 +31,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "peerDependencies": {
-    "@gedai/nestjs-core": "^0.0.5",
-    "@gedai/nestjs-tactical-design": "^0.0.2",
+    "@gedai/nestjs-core": "^0.0.6",
+    "@gedai/nestjs-tactical-design": "^0.0.3",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/mongoose": "^10.0.4",
